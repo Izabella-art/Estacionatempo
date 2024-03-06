@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Um.css">
+</head>
+<style>
+    body {
+        background-color: #325573;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin: 60;
+        height: 100vh;
+        width: 100vw;
+        color: #325573;
+        font-family: 'poppins', sans-serif;
+
+    }
+
+    .ave {
+        background-color: none;
+        /*definindo cor de fundo*/
+        width: 1300px;
+        height: 740px;
+        /*definindo altura*/
+        /*definindo largura*/
+        /*dando espaço entre os itens no cabecalho*/
+        border: 3px solid #274fff;
+        /*definindo cor da borda*/
+        border-radius: 10px;
+        BOX-shadow: 0 0 15px #274fff, inset 0 0 15px #274fff;
+        text-shadow: 0 0 15px #274fff;
+    }
+
+    /*Nav*/
+    .cabecalho-nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .cabecalho {
+        background-color: #F2911B;
+        /*definindo cor de fundo*/
+        width: 1325px;
+        height: 110px;
+        /*definindo altura*/
+        display: flex;
+        /*definindo largura*/
+        justify-content: space-around;
+        /*dando espaço entre os itens no cabecalho*/
+        border: 3px solid #fdfdfd;
+        /*definindo cor da borda*/
+        border-radius: 10px;
+        BOX-shadow: 0 0 15px #27bbff, inset 0 0 15px #27bbff;
+        text-shadow: 0 0 15px #27bbff;
+    }
+
+
+
+    /*Nav*/
+    .cabecalho-nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    form {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: #59252E;
+        border: 2px solid #ffffff;
+        padding: 15px;
+        margin: 20px auto;
+        width: 600px;
+        height: 150px;
+        box-shadow: 5px 10px #F2911B;
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        transform: translate(-50%, );
+        display: flex;
+        overflow: hidden;
+        border-radius: 20px;
+
+    }
+
+    .cadastro {
+        color: rgba(251, 255, 0, 0.911);
+        margin: 20px;
+        padding-left: 240px;
+        text-shadow: 0 0 15px #eef21b;
+        top: 96%;
+        left: 55%;
+    }
+
+
+    label {
+        /*nome do formulario*/
+        display: block;
+        margin-bottom: 10px;
+        /*margem em baixo*/
+
+    }
+
+    input[type=text],
+    /*separador é a virgula*/
+    input[type=email] {
+        width: 550px;
+        padding: 5px 10px;
+        border: 1px solid #ffffff;
+        /*borda do canto*/
+        border-radius: 20px;
+    }
+
+    select {
+        width: 150px;
+        /*sugestão etc*/
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    input[type=submit] {
+        display: block;
+        margin-top: 100px;
+        padding: 10px;
+        background-color: #ffffff;
+        color: #333333;
+        border-radius: 20px;
+
+    }
+
+
+
+    /*Conteúdo do centro da pagina*/
+    main {
+        background-color: #D9D8D7;
+        height: 2600px;
+        width: 790px;
+        border: 3px solid hsl(22, 96%, 43%);
+        padding-top: 20px;
+    }
+
+    .img {
+        color: transparent;
+        align-items: center;
+        position: absolute;
+        top: 58%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imga {
+        align-items: center;
+        position: absolute;
+        top: 11%;
+        left: 12%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imgb {
+        align-items: center;
+        position: absolute;
+        top: 11%;
+        left: 89%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+    }
+
+    .imgc {
+        align-items: center;
+        position: absolute;
+        top: 121%;
+        left: 29%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /*estilizando a sessão sa pagina*/
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    /*Esrilizando o radapé*/
+    footer {
+        background-color: #D95204;
+        height: 100px;
+        width: 800;
+        border: 3px solid#D9D8D7;
+        margin-top: 50%;
+        background-color: #F2911B;
+        /*definindo cor de fundo*/
+        width: 1325px;
+        height: 90px;
+        /*definindo altura*/
+        display: flex;
+        /*definindo largura*/
+        justify-content: space-around;
+        /*dando espaço entre os itens no cabecalho*/
+        border: 3px solid #fdfdfd;
+        /*definindo cor da borda*/
+        border-radius: 10px;
+        padding-top: 2%;
+    }
+
+    /*texto h2*/
+    h2 {
+        text-align: center;
+        color: #D9D8D7;
+    }
+
+    /*unidade p*/
+    p.double {
+        border-style: double;
+    }
+
+    /*definindo a ul*/
+    ul {
+        overflow: auto
+            /*c*/
+    }
+
+
+
+    select {
+        width: 100%;
+        padding: 16px 20px;
+        border: 3px solid #D9D8D7;
+        border-radius: 4px;
+        background-color: #59252E;
+        color: #D9D8D7;
+        font-size: large;
+        display: block;
+        /*definindo largura*/
+        justify-content: space-around;
+
+    }
+
+
+
+
+
+
+
+
+
+    .dropdown {
+        position: top;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        /*quem fica no meio e quem fica atras*/
+        display: flex;
+        position: absolute;
+        background-color: #D9D8D7;
+        min-width: 110px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 0px;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*Saiba Mais*/
+
+    .dropbtn {
+        background-color: #10087e;
+        padding: 16px;
+        cursor: pointer;
+        border: 2px solid #fdfdfd;
+        color: #ffffff;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        /*contem lá dentro*/
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #86c0bb;
+        max-width: 110px;
+        box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+        z-index: 1;
+
+    }
+
+    .dropdown-content a {
+        color: #ff8308;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+    }
+
+    .dropdown-content a:hover {
+        background-color: #160f78;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #10087e;
+        BOX-shadow: 0 0 15px #1bd2f2, inset 0 0 15px #1bd2f2;
+        text-shadow: 0 0 15px #1bd2f2;
+    }
+
+
+    .content {
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 20px;
+        position: absolute;
+        top: 90%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    /*link*/
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        padding: 20px, 20px;
+        color: #D9D8D7;
+
+    }
+
+    /*ação do botão*/
+    a.active {
+        background-color: #F2911B;
+        color: #0c0c0c;
+    }
+
+    /*ação do botçao desativado*/
+    a:hover:not(.active) {
+        background-color: #140d68;
+        color: #D9D8D7;
+
+    }
+
+
+
+
+
+
+    /*titulo cadastar*/
+    button {
+        position: absolute;
+        top: 62%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        padding: 15px 43px;
+        font-size: 20px;
+        background: transparent;
+        border: 2px solid #eef21b;
+        color: #eef21b;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+
+    button:hover {
+        BOX-shadow: 0 0 15px #eef21b, inset 0 0 15px #eef21b;
+        text-shadow: 0 0 15px #eef21b;
+    }
+
+    /*titulo cadastar*/
+    .buttonc {
+        position: absolute;
+        top: 62%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        padding: 15px 43px;
+        font-size: 20px;
+        background: transparent;
+        border: 2px solid #eef21b;
+        color: #eef21b;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+
+    .buttonc:hover {
+        BOX-shadow: 0 0 15px #eef21b, inset 0 0 15px #eef21b;
+        text-shadow: 0 0 15px #eef21b;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    a:link,
+    a:visited {
+        background-color: #F2911B;
+        /*Cor de fundo*/
+        color: #D9D8D7;
+        /*cor do conteúdo*/
+        border: 4px solid #12d8c7;
+        /*borda*/
+        padding: 16px 3px;
+        /*preenchimento*/
+        text-align: center;
+        /*alinhamento do botão*/
+        text-decoration: none;
+        /**/
+        display: flow-root;
+        /**/
+        border-radius: 0px;
+        width: 150px;
+        height: 30px;
+
+    }
+
+
+
+
+    /*titulo cadastar*/
+    .buttona {
+        position: relative;
+        top: 0%;
+        left: 160%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        background: #10087e;
+        border: 2px solid #ffffff;
+        color: #f3f3f3;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: 60px;
+    }
+
+    .buttona:hover {
+        BOX-shadow: 0 0 15px #1bd2f2, inset 0 0 15px #1bd2f2;
+        text-shadow: 0 0 15px #1bd2f2;
+    }
+</style>
+
+<body>
+
+    <header class="cabecalho">
+
+        <nav class="cabecalho-nav">
+            <b><button class="buttona" href="cadcadcad.html">EstacionaTempo</button></b>
+            <div class="cadastro">
+                <img class="imga " src="img\estacionanoite\Ellipse 4.png" width="100" height="100">
+            </div><br>
+            <div class="dropdown" style="float: left;">
+                <button class="dropbtn">Mais</button>
+                <section>
+                    <div class="dropdown-content" style="left: 0;">
+                        <a class="active" href="Lista.html">Lista de Espera</a>
+                        <a href="Desistencia.html" target="_self">Desistência da vaga</a>
+                        <a class="active" href="admadm.html">Adicionar Nova Equipe</a>
+                    </div>
+                </section>
+            </div>
+            <img class="imgb " src="img\estacionanoite\Image 47.png" width="65" height="66">
+        </nav>
+        <nav class="cabecalho-nav">
+
+            <div class="">
+
+                <div class="img">
+                    <br>
+                    <img src="img\estacionanoite\carro1 (1).png" alt="arara" width="1150" height="400">
+                    </h1><br>
+                </div><br>
+
+            </div>
+    </header>
+    <div class="div-main">
+        <img class="imgc " src="img\estacionanoite\Ellipse 2.png" width="150" height="150">
+
+        <form>
+
+            <b><button class="buttonc">Reservar Vaga</button></b>
+            <b><button>Disponibilizar Vaga</button></b>
+
+        </form>
+    </div>
+    <article class="div-footer">
+        <footer>
+            <b>
+                <p>Projeto Integrador Senac-SBC</p>
+            </b>
+            <img src="img\estacionanoite\instagram.png" width="50" height="50">
+        </footer>
+    </article>
+
+</body>
+
+</html>
